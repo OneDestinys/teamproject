@@ -38,9 +38,8 @@ Get feedback and make changes to the project
 Submit the project
 
 
-
-
 *5. Collaboration Plan: How will you collaborate with your teammates on this project? Will you divide tasks and then incorporate them separately? Will you undertake a comprehensive pair program? Explain how you'll ensure effective team collaboration. This may also entail information on any software development methodologies you anticipate using (e.g. agile development). Be sure to clarify why you've picked this specific organizational structure.*
+
 We are planning to schedule a series of time blocks to work together with each other either in person or virtually. We are leaning towards dividing the task and then incorporating them separately for now but we are also open to comprehensive pair programming if need be. One of the good options available to us is Liveshare, which will allow us to work on the project at the same time. To ensure effective team collaboration we’ll meet twice every week, once, in the beginning, to make sure that we have further broken down the tasks and assigned them to each other and at the end of the week to make sure we conclude properly. The concluding meeting will focus on summarizing the tasks and discussing what went well and what can be improved. We have also discussed being open to communication with each other. We are working in a short time frame but we are definitely interested in implementing agile software development. 
 
 
