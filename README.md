@@ -16,15 +16,19 @@ Summary of the project, goals and who did we build this for. any unique feature.
 
 ## Installation
 
-1) Install Python 3.9 
-2) Go to file directory, right click and open terminal
-3) Run `pip install -r requirements.txt` (Credit: https://stackoverflow.com/questions/31684375/automatically-create-requirements-txt)
-4) Put your discord bot token (accessible under discord developer portal), transcript channel id, and mongodb url (accessible through mongodb atlas) in settings.py file
-5) Invite the bot to your server (discord developer portal -> oauth2 -> url)
-6) Then run `python discord_bot.py` 
+1. Install Python 3.9 
+2. Go to file directory, right click and open terminal
+3. Run `pip install -r requirements.txt` (Credit: https://stackoverflow.com/questions/31684375/automatically-create-requirements-txt)
+4. Put your discord bot token (accessible under discord developer portal), transcript channel id, and mongodb url (accessible through mongodb atlas) in settings.py file
+5. Invite the bot to your server (discord developer portal -> oauth2 -> url)
+6. Then run `python discord_bot.py` 
 
 ## Usage
+
+
 __**Commands**__
+
+
 !ban {user} or /ban {user}: Will ban the user from your guild
 
 !ping or /ping: Will respond with pong
