@@ -26,7 +26,7 @@ Summary of the project, goals and who did we build this for. any unique feature.
 ## Usage
 
 
-__**Commands**__
+### Commands
 
 
 !ban {user} or /ban {user}: Will ban the user from your guild
