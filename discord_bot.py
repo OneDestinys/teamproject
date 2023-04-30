@@ -128,6 +128,7 @@ class Panel_Options(View):
     async def callback(self, btn, interaction: discord.Interaction):
         await interaction.response.defer(ephemeral=True, invisible=False)
         # the bot only has 5 seconds to respond and this can be slow, so we need to let it 'think' for a bit
+        #ephemeral and invisible are so only the user who clicked it can see it
         Create_Category = True
         category = None
         for item in interaction.guild.categories:

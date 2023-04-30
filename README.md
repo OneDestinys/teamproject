@@ -45,11 +45,19 @@ We wanted to make this because we both use Discord very often and wanted to get 
 We started the project by really talking to each other and pinpointing the key things that we wanted from this project, and developing a project timeline that will help us get to there. We broke the project into various steps,
 
 1. Create a Discord account and a new application
-2. Choose frameworks that best represents the project, suits the needs of our bot and something we were most comfortable working with
-3. We then started writing code for the bot
-4. There were immediate instance where we were writing and testing the code right away and but we as we finished a MVP we really made sure that it wokred as expeted and doesn't have any bugs 
-7. The second last piece was the deployment where wee basically invited and ran the bot in various servers
-8. Lastly once when had a MVP we really worked to add other fuctionalities such as being able to send funny cat memes 
+2. Choose exactly what we wanted to do, which was have fun! But we knew we had to start with the basics...
+3. We then started writing code for the bot, basics first and created a virtual environmnet for testing purposes... 
+We tried just having something happen when the bot is ran, which is what we did. We couldn't think more simple than that and we had the opportunity to play around with events.
+![code1](images/code ss 1.png)
+4. Then we dove even deeper with bridge commands...
+![code1](images/code ss 2.png)
+![code2](images/code ss 3.png)
+5. And then EVEN DEEPER with error messages, Mongo, and OOP!
+![code3](images/error.png)
+![code4](images/mongo.png)
+![code5](images/oop.png)
+6. And lastly, to celebrate our MVP, we wanted to add one last thing... something that would make anyone playing around with our bot smile... Cats! 
+![cat](images/cats!.png)
 
 
 ## Results
