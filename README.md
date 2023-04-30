@@ -53,7 +53,7 @@ We started the project by really talking to each other and pinpointing the key t
 
 
 ## Results
-Upon installation, our can perform the tasks seen in commands.
+Upon installation, here are a few cool things that our bot can do!
 
 ### Tickets
 ![tickets](images/tickets.png)
