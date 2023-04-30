@@ -29,7 +29,7 @@ async def on_ready():
 
 
 # bridge command will await message with prefix or /
-@my_bot.bridge_command(description = "To get a pong back!")
+@my_bot.bridge_command(description="To get a pong back!")
 async def ping(ctx: BridgeContext):
     # waiting for the user to respond with !ping or /ping to respond with Pong
     await ctx.respond("Pong")
@@ -52,61 +52,69 @@ async def add(ctx: BridgeContext, user: discord.Member):
         return
     channel: discord.TextChannel = ctx.channel
 
-    await channel.set_permissions(target = user, overwrite= discord.PermissionOverwrite(view_channel=True, send_messages=True, read_messages=True))
+    await channel.set_permissions(
+        target=user,
+        overwrite=discord.PermissionOverwrite(
+            view_channel=True, send_messages=True, read_messages=True
+        ),
+    )
     await ctx.respond(f"Added {user.mention} to channel")
     await user.send(f"You've been added to the channel {ctx.channel.mention}")
 
-@my_bot.bridge_command(description = "To generate a cute cat!")        
+
+@my_bot.bridge_command(description="To generate a cute cat!")
 async def cat(ctx: BridgeContext):
     resp = requests.get("https://api.thecatapi.com/v1/images/search").json()
-    url = resp[0]['url']
+    url = resp[0]["url"]
     resp_quote = requests.get("https://zenquotes.io/api/random").json()
-    quote = resp_quote[0]['q']
-    embed = discord.Embed(title = quote)
-    embed.set_image(url = url)
-    await ctx.respond(
-        embeds = [
-            embed
-        ]
-    )
+    quote = resp_quote[0]["q"]
+    embed = discord.Embed(title=quote)
+    embed.set_image(url=url)
+    await ctx.respond(embeds=[embed])
 
-@my_bot.bridge_command(description = "To close your ticket")
-#https://github.com/mahtoid/DiscordChatExporterPy
+
+@my_bot.bridge_command(description="To close your ticket")
+# https://github.com/mahtoid/DiscordChatExporterPy
 async def close(ctx: BridgeContext):
     user = None
     try:
         user = ctx.user
     except:
         user = ctx.author
-    
-    #Had original attribute errors where 'bridgeextcontext' object did not have user attribute, so I did a try/except so if user = ctx.user rose an error it would do the
+
+    # Had original attribute errors where 'bridgeextcontext' object did not have user attribute, so I did a try/except so if user = ctx.user rose an error it would do the
     channel = ctx.channel
     guild = ctx.guild
     if channel.category.name == "tickets":
         await ctx.respond("Your ticket is being archived")
         transcript = await chat_exporter.export(ctx.channel)
         transcript_file = discord.File(
-           io.BytesIO(transcript.encode()),
+            io.BytesIO(transcript.encode()),
             filename=f"transcript-{ctx.channel.name}.html",
         )
         transcript_file_2 = discord.File(
-           io.BytesIO(transcript.encode()),
+            io.BytesIO(transcript.encode()),
             filename=f"transcript-{ctx.channel.name}.html",
         )
         transc = guild.get_channel(TRANSCRIPT_CHANNEL_ID)
-        await transc.send(f"<@!{channel.topic}>'s ticket has been archived by {user.mention}", files=[transcript_file])
+        await transc.send(
+            f"<@!{channel.topic}>'s ticket has been archived by {user.mention}",
+            files=[transcript_file],
+        )
         member = await guild.fetch_member(channel.topic)
-        await member.send(f"Your ticket was archived by {user.mention}", files=[transcript_file_2])
+        await member.send(
+            f"Your ticket was archived by {user.mention}", files=[transcript_file_2]
+        )
         await channel.delete()
-    else: 
+    else:
         ctx.respond("You're currently not in a ticket!")
+
 
 @ban.error
 async def ban_error(ctx: discord.ApplicationContext, error: discord.DiscordException):
     if isinstance(error, commands.MissingRequiredArgument):
         await ctx.respond("Please enter a user to ban")
     print(error)
-
 
 
 class Panel_Options(View):
@@ -118,10 +126,7 @@ class Panel_Options(View):
         label="Open a Ticket", custom_id="1", style=discord.ButtonStyle.primary
     )
     async def callback(self, btn, interaction: discord.Interaction):
-        await interaction.response.defer(
-            ephemeral=True,
-            invisible=False
-        )
+        await interaction.response.defer(ephemeral=True, invisible=False)
         # the bot only has 5 seconds to respond and this can be slow, so we need to let it 'think' for a bit
         Create_Category = True
         category = None
@@ -143,16 +148,19 @@ class Panel_Options(View):
             name=f"ticket-{ticket_id}",
             category=category,
             overwrites={
-                interaction.user: discord.PermissionOverwrite(view_channel=True, send_messages=True, read_messages=True),
-                interaction.guild.default_role: discord.PermissionOverwrite(view_channel=False)
+                interaction.user: discord.PermissionOverwrite(
+                    view_channel=True, send_messages=True, read_messages=True
+                ),
+                interaction.guild.default_role: discord.PermissionOverwrite(
+                    view_channel=False
+                ),
             },
-            topic=f'{interaction.user.id}'
+            topic=f"{interaction.user.id}",
         )
-        tickets.insert_one({
-            "creator": interaction.user.id,
-            "channel": ticket.id
-        })
-        await interaction.followup.send(content=f"You've created a new ticket {ticket.mention}")
+        tickets.insert_one({"creator": interaction.user.id, "channel": ticket.id})
+        await interaction.followup.send(
+            content=f"You've created a new ticket {ticket.mention}"
+        )
 
 
 @my_bot.command()
