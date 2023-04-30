@@ -4,7 +4,7 @@
 
 - [The Big Idea](#the-big-idea)
 - [Installation](#installation)
-- [Usage](#usage)
+- [Implementation Information](#implementation-information)
 - [Project Evolution](#project-evolution)
 - [Results](#results)
 - [Contributing](#contributing)
@@ -22,8 +22,6 @@ We wanted to make this because we both use Discord very often and wanted to get 
 5. Invite the bot to your server (discord developer portal -> oauth2 -> url)
 6. Then run `python discord_bot.py` 
 
-## Usage
-
 
 ### Commands
 !ban {user} or /ban {user}: Will ban the user from your guild
@@ -37,6 +35,10 @@ We wanted to make this because we both use Discord very often and wanted to get 
 !close or /close: Will close the ticket, send a transcript to the user and the transcript channel
 
 !cat or /cat: Will send an embed with a cat image and inspirational quote
+
+
+## Implementation Information
+
 
 
 ## Project Evolution
