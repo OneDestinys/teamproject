@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-- [The Big Idea](#the-big-dea)
+- [The Big Idea](#the-Big-Idea)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Evolution](#project-evolution)
