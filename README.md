@@ -10,7 +10,7 @@
 - [Contributing](#contributing)
 
 
-## The big idea
+## The Big Idea
 We wanted to make this because we both use Discord very often and wanted to get more familiar with the application we use daily. The purpose of this bot was to be a playground for us to try out cool features and play around with the Pycord library. As a result, we made a ban command for basic moderation, utilized https://thecatapi.com/ to bring you adorable cats (as well as https://zenquotes.io/ for some inspirational quotes), and made a full ticket system with the ability to add users, store ticket IDs + users in an external database, and save transcripts of the conversation. We also added a quick feature that lets you ping the bot to make sure it's alive, if it doesn't respond with pong, call 911 (that's a joke, please don't actually call 911 if it doesn't respond).
 
 
