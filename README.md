@@ -23,9 +23,6 @@ We wanted to make this because we both use Discord very often and wanted to get 
 6. Then run `python discord_bot.py` 
 
 
-## Implementation Information
-
-
 ### Commands
 !ban {user} or /ban {user}: Will ban the user from your guild
 
@@ -38,6 +35,10 @@ We wanted to make this because we both use Discord very often and wanted to get 
 !close or /close: Will close the ticket, send a transcript to the user and the transcript channel
 
 !cat or /cat: Will send an embed with a cat image and inspirational quote
+
+
+## Implementation Information
+
 
 
 ## Project Evolution
