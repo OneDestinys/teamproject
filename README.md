@@ -51,13 +51,10 @@ We started the project by really talking to each other and pinpointing the key t
 
 
 ## Results
-Upon installation, our bot should help you perform the following tasks:
+Upon installation, our can perform the tasks seen in commands.
 
-1. Moderation commands (e.g. kick, ban, mute)
-2. A ticket system that saves transcripts as text files
-3. Can be used to automate repetitive tasks. For example welcome new members , assign tasks to them
-4. It also entertains the users by sending funny cat photos
-
+### Tickets
+![tickets](images/tickets.png)
 
 ## Contributing
 We used some help from ChatGPT, individuals, and internet sources such as Reddit.
