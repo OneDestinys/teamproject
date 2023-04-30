@@ -38,6 +38,19 @@ We wanted to make this because we both use Discord very often and wanted to get 
 
 
 ## Implementation Information
+1. Import necessary modules and packages
+2. Create bot object with prefix and permissions
+3. Register on_ready event to print message and add custom UI panel
+4. Register ping, ban, add, cat, and close commands
+5. Define error handling function for ban command
+6. Define Panel_Options class, inheriting from discord.ui.View, with a single button labeled "Open a Ticket"
+7. Define callback function for "Open a Ticket" button click event, which creates a new text channel in the "tickets" category with the name "ticket-{user name}"
+8. Define on_message event to handle messages in "tickets" text channels, checking if they are commands and executing appropriate function
+9. Define close command to export ticket transcript and send to specified channel before deleting ticket channel.
+
+start -> bot object creation -> register on_ready event -> register custom UI panel -> 
+         register bridge commands -> register error handling function -> define Panel_Options class -> 
+         define callback function -> register on_message event -> define close command -> end
 
 
 
