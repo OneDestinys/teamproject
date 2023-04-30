@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-- [Overview](#overview)
+- [The-Big-Idea](#the-big-idea)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Evolution](#project-evolution)
@@ -10,7 +10,7 @@
 - [Contributing](#contributing)
 
 
-## Overview
+## The big idea
 Summary of the project, goals and who did we build this for. any unique feature.
 
 ## Installation
@@ -42,8 +42,7 @@ Summary of the project, goals and who did we build this for. any unique feature.
 We started the project by really talking to each other and pinpointing the key things that we wanted from this project, and developing a project timeline that will help us get to there. We broke the project into various steps,
 
 1. Create a Discord account and a new application
-2. Choose frameworks that best represents the project, suits the needs of our bot and something we are most comfortable working with
-
+2. Choose frameworks that best represents the project, suits the needs of our bot and something we were most comfortable working with
 
 
 ## Results
