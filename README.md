@@ -4,7 +4,7 @@
 
 - [The Big Idea](#the-big-idea)
 - [Installation](#installation)
-- [Usage](#usage)
+- [Implementation Information](#implementation-information)
 - [Project Evolution](#project-evolution)
 - [Results](#results)
 - [Contributing](#contributing)
@@ -22,7 +22,8 @@ We wanted to make this because we both use Discord very often and wanted to get 
 5. Invite the bot to your server (discord developer portal -> oauth2 -> url)
 6. Then run `python discord_bot.py` 
 
-## Usage
+
+## Implementation Information
 
 
 ### Commands
