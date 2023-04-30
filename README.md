@@ -57,6 +57,7 @@ Upon installation, our can perform the tasks seen in commands.
 
 ### Tickets
 ![tickets](images/tickets.png)
+
 ![tickets1](images/ticket-panel.png)
 
 ### Archiving
