@@ -57,6 +57,22 @@ Upon installation, our can perform the tasks seen in commands.
 
 ### Tickets
 ![tickets](images/tickets.png)
+![tickets1](images/ticket-panel.png)
+
+### Archiving
+![archive1](images/archive.png)
+![archive2](images/archive2.png)
+
+### Ping
+![ping](images/ping.png)
+
+### Cats!🐈
+![cat1](images/cat.png)
+![cat2](images/cat2.png)
+
+### Ban
+![ban](images/ban.png)
+
 
 ## Contributing
 We used some help from ChatGPT, individuals, and internet sources such as Reddit.
